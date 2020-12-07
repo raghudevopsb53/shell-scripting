@@ -7,6 +7,11 @@
 echo Hello World
 echo Good Morning!!
 
+## Escape sequences
+# \n - new line
+# \t - new tab
+# \e - new color
+
 echo -e "Hello,\n\n\tWelcome to todays session.\n\nRegards,\nRaghu K."
 
 #Hello,
@@ -15,3 +20,12 @@ echo -e "Hello,\n\n\tWelcome to todays session.\n\nRegards,\nRaghu K."
 #
 #Regards,
 #Raghu K.
+
+
+## Colors         Foreground
+# Red                 31
+# Green               32
+# Yellow              33
+# Blue                34
+# Magenta             35
+# Cyan                36
