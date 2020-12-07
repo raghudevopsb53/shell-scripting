@@ -5,3 +5,5 @@
 # 2. printf  -> Have more syntax
 
 echo Hello World
+echo Good Morning!!
+
