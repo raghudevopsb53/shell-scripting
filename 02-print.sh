@@ -41,3 +41,8 @@ echo -e "\e[35mMAGENTA TEXT"
 echo -e "\e[36mCYAN TEXT"
 
 echo -e "\e[41;33mYELLOW on RED"
+
+## Color we enable will not be disabled by default, means the color will move to next
+# lines as well
+
+echo -e "\e[41;33mYELLOW on RED\e[0m"
