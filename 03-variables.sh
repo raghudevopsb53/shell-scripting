@@ -36,3 +36,12 @@ echo "Good Morning, Today date is $DATE"
 
 ADD=$((2+3))
 echo ADD = $ADD
+
+
+# Data Types
+a=10      # Intiger
+b=xyz     # String
+c=true    # Boolean
+d=9.99    # Float
+
+echo -e "a = $a, b = $b, c = $c, d = $d"
