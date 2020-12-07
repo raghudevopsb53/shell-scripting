@@ -7,7 +7,7 @@
 echo Hello World
 echo Good Morning!!
 
-echo Hello, Welcome to todays session, Regards, Raghu K.
+echo Hello,\n\n Welcome to todays session.\n\n Regards,\n Raghu K.
 
 #Hello,
 #
