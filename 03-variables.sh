@@ -24,4 +24,12 @@ echo $COURSE_NAME Trainer - Raghu
 # Java - varName (CamelCase)
 
 
-echo "Good Morning, Today date is 2020-12-07"
+DATE=2020-12-06
+echo "Good Morning, Today date is $DATE"
+
+# To declare variable content dynamically then we should be using
+  # 1. Command Substitution      VAR=$(command)
+  # 2. Arithmetic Substitution   VAR=$((expression))
+
+DATE=$(date +%F)
+echo "Good Morning, Today date is $DATE"
