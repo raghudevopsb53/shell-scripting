@@ -7,3 +7,11 @@
 echo Hello World
 echo Good Morning!!
 
+echo Hello, Welcome to todays session, Regards, Raghu K.
+
+#Hello,
+#
+#Welcome to todays session
+#
+#Regards,
+#Raghu K.
