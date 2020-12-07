@@ -29,3 +29,8 @@ echo -e "Hello,\n\n\tWelcome to todays session.\n\nRegards,\nRaghu K."
 # Blue                34
 # Magenta             35
 # Cyan                36
+
+# syntax for color print
+# echo -e "\e[COLmMESSAGE"
+
+echo -e "\e[31mRED TEXT"
