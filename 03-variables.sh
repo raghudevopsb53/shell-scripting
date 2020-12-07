@@ -44,4 +44,4 @@ b=xyz     # String
 c=true    # Boolean
 d=9.99    # Float
 
-echo -e "a = $a, b = $b, c = $c, d = $d"
+echo  a = $a, b = $b, c = $c, d = $d
