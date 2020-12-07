@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/python
 
 # #! is called as She-Bang
 # 1. It denotes the path of interpreter
