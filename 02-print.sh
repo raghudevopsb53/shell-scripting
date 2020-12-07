@@ -46,3 +46,9 @@ echo -e "\e[41;33mYELLOW on RED"
 # lines as well
 
 echo -e "\e[41;33mYELLOW on RED\e[0m"
+
+# Some style codes
+# Underline character - 4
+# Bold character - 1
+
+echo -e "\e[33mYellow Normal , \e[1;33mBold Yellow\e[0m"
