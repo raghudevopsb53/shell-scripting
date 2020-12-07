@@ -33,3 +33,6 @@ echo "Good Morning, Today date is $DATE"
 
 DATE=$(date +%F)
 echo "Good Morning, Today date is $DATE"
+
+ADD=$((2+3))
+echo ADD = $ADD
