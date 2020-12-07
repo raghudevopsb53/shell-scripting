@@ -7,11 +7,11 @@
 echo Hello World
 echo Good Morning!!
 
-echo -e "Hello,\n\nWelcome to todays session.\n\nRegards,\nRaghu K."
+echo -e "Hello,\n\n\tWelcome to todays session.\n\nRegards,\nRaghu K."
 
 #Hello,
 #
-#Welcome to todays session
+#   Welcome to todays session
 #
 #Regards,
 #Raghu K.
