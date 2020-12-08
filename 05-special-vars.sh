@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo $0 
+echo Script Name = $0
