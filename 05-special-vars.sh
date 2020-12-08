@@ -7,5 +7,5 @@ echo Second Argument = $2
 echo "All Arguments (*) =  $*"
 echo "All Arguments (@) = $@"
 
-echo $#
+echo Number of Arguments = $#
 
