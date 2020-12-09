@@ -10,9 +10,6 @@ FAIL() {
   echo -e "[\e[1;31mFAIL\e[0m] [\e[1;35m${COMPONENT}\e[0m] [\e[1;36m$(date '+%F %T')\e[0m] $1"
 }
 
-LOG_FILE=/tmp/roboshop.log
-rm -f $LOG_FILE
-
 ## Verify User is root or not
 USER_ID=$(id -u)
 case $USER_ID in
@@ -24,3 +21,6 @@ case $USER_ID in
     exit 1
     ;;
 esac
+
+LOG_FILE=/tmp/roboshop.log
+rm -f $LOG_FILE
