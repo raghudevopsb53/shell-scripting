@@ -11,6 +11,7 @@ FAIL() {
 }
 
 LOG_FILE=/tmp/roboshop.log
+rm -f $LOG_FILE
 
 ## Verify User is root or not
 USER_ID=$(id -u)
