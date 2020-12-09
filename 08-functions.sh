@@ -34,7 +34,7 @@ echo A = $a
 # Inputs to the functions using special variables
 SAMPLE2() {
   echo First Argument = $1
-  echo Second Argument = $2 
+  echo Second Argument = $2
 }
 
-SAMPLE2 10 20
+SAMPLE2 "10 20"
