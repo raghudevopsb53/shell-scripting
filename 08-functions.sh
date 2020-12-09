@@ -37,4 +37,4 @@ SAMPLE2() {
   echo Second Argument = $2
 }
 
-SAMPLE2 "10 20"
+SAMPLE2 10 20
