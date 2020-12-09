@@ -30,3 +30,11 @@ echo A = $a
 # You declare variable in main program , you can access in function & Vice-Versa
 # You declare a variable in main program , you can overwrite the variable in function & Vice-Versa
 
+
+# Inputs to the functions using special variables
+SAMPLE2() {
+  echo First Argument = $1
+  echo Second Argument = $2 
+}
+
+SAMPLE2 10 20
