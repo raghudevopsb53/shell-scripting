@@ -1,3 +1,5 @@
+common:
+	@sh components/common.sh 
 frontend:
 	@sh components/frontend.sh
 mongo:
