@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo Installing Frontend
+echo [INFO] [frontend] [$(date "+%F %T")] Installing Frontend Component
