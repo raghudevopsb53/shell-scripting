@@ -35,3 +35,8 @@ STAT() {
       ;;
   esac
 }
+
+DOWNLOAD_ARTIFACT() {
+  curl -s -o /tmp/${COMPONENT}.zip $1 &>>LOG_FILE
+  STAT $? "Artifact Download"
+}
