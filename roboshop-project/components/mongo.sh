@@ -30,7 +30,15 @@ STAT $? "MongoDB restart"
 INFO "Downloading MongoDB Schema"
 DOWNLOAD_ARTIFACT "https://dev.azure.com/DevOps-Batches/f635c088-1047-40e8-8c29-2e3b05a38010/_apis/git/repositories/03f2af34-e227-44b8-a9f2-c26720b34942/items?path=%2F&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=zip&api-version=5.0&download=true"
 
+cd /tmp
+INFO "Extract Artifact"
+unzip -o mongodb.zip &>>$LOG_FILE
+STAT $? "Artifact Extract"
 
+INFO "Load Schema - Catalogue Service"
+mongo < catalogue.js &>>$LOG_FILE
+STAT $? "Catalogue Schema Load"
 
-# systemctl enable mongod
-# systemctl start mongod
+INFO "Load Schema - Users Service"
+mongo < users.js &>>$LOG_FILE
+STAT $? "Users Schema Load"
