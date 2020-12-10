@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPONENT=frontend
+COMPONENT=mongodb
 source components/common.sh
 
 INFO "Setup Mongo Component"
