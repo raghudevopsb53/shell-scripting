@@ -23,6 +23,6 @@ unzip /tmp/${COMPONENT}.zip &>>$LOG_FILE
 STAT $? "Artifacts Extract"
 
 INFO "Install NodeJS dependencies"
-npm install
+npm install &>>$LOG_FILE
 STAT $? "NodeJS Dependencies Installation"
 
