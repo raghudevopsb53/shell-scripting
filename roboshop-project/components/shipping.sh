@@ -34,7 +34,7 @@ STAT $? "Artifacts Extract"
 INFO "Compile Shipping Application"
 mvn clean package  &>>$LOG_FILE
 mv target/shipping-1.0.jar shipping.jar  &>>$LOG_FILE
-STAT "Shipping Compile"
+STAT $? "Shipping Compile"
 
 chown roboshop:roboshop /home/roboshop/${COMPONENT} -R
 
