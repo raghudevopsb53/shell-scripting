@@ -15,12 +15,12 @@ STAT $? "Setup repository"
 
 INFO "Install MySQL Server"
 yum remove mariadb-libs -y &>>$LOG_FILE
-yum install mysql-community-server -y  &>>$LOG_FILES
+yum install mysql-community-server -y  &>>$LOG_FILE
 STAT $? "MySQL Installation"
 
 INFO "Start MYSQL Service"
-systemctl enable mysqld &>>$LOG_FILES
-systemctl start mysqld &>>$LOG_FILES
+systemctl enable mysqld &>>$LOG_FILE
+systemctl start mysqld &>>$LOG_FILE
 STAT $? "MYSQL Service Startup"
 
 
