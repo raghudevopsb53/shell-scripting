@@ -34,3 +34,5 @@ INFO "Install NodeJS dependencies"
 npm install --unsafe-perm  &>>$LOG_FILE
 STAT $? "NodeJS Dependencies Installation"
 
+chown roboshop:roboshop /home/roboshop/${COMPONENT} -R
+
