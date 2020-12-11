@@ -36,3 +36,18 @@ STAT $? "NodeJS Dependencies Installation"
 
 chown roboshop:roboshop /home/roboshop/${COMPONENT} -R
 
+INFO "Configuring Catalogue Startup Script "
+sed -i -e "s/MONGO_DNSNAME/mongodb-test.devopsb53.tk/" /home/roboshop/catalogue/systemd.service
+STAT $? "Startup script configuration"
+
+
+INFO "Setup SystemD Service for Catalogue"
+mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
+systemctl daemon-reload
+STAT $? "Catalogue SystemD Service"
+
+INFO "Starting Catalogue Service"
+systemctl enable catalogue &>>$LOG_FILE
+systemctl start catalogue &>>$LOG_FILE
+STAT $? "Catalogue Service Start"
+
