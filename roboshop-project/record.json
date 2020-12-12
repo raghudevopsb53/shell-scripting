@@ -3,7 +3,7 @@
   "Changes": [{
     "Action": "CREATE",
     "ResourceRecordSet": {
-      "Name": "devopsb53.tk",
+      "Name": "COMPONENT-test",
       "Type": "A",
       "TTL": 300,
       "ResourceRecords": [{ "Value": IPADDRESS}]
