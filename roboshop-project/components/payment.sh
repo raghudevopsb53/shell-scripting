@@ -35,7 +35,7 @@ STAT $? "Artifacts Extract"
 chown roboshop:roboshop  /home/roboshop/${COMPONENT} -R &>>$LOG_FILE
 
 INFO "Install Python Dependencies"
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt &>>$LOG_FILE
 STAT $? "Dependencies Download"
 
 
