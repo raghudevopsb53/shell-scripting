@@ -6,8 +6,17 @@ source components/common.sh
 INFO "Setup RabbitMQ Component"
 
 INFO "Install ErLang"
-yum install https://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_22.2.1-1~centos~7_amd64.rpm -y &>>$LOG_FILE
-STAT $? "ErLang Installation"
+yum list esl-erlang &>>$LOG_FILE
+case $? in
+  0)
+    STAT 0 "ErLang Installation"
+    ;;
+  1)
+    yum install https://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_22.2.1-1~centos~7_amd64.rpm -y &>>$LOG_FILE
+    STAT $? "ErLang Installation"
+    ;;
+esac
+
 
 INFO "Setup RabbitMQ Repos"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash &>>$LOG_FILE
