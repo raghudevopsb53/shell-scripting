@@ -1,1 +1,3 @@
 Hello World
+
+sudo yum install make -y ; git clone https://github.com/raghudevopsb53/shell-scripting.git ; cd shell-scripting/roboshop-project ; sudo make
