@@ -43,11 +43,12 @@ INFO "Configuring Payment Startup Script "
 sed -i  -e "s/CARTHOST/cart-test.devopsb53.tk/" \
         -e "s/USERHOST/user-test.devopsb53.tk/" \
         -e "s/AMQPHOST/rabbitmq-test.devopsb53.tk/" \
-        /home/roboshop/catalogue/systemd.service
+        /home/roboshop/${COMPONENT}/systemd.service
 USER_UID=$(id -u centos)
 USER_GID=$(id -g centos)
 sed -i  -e "/uid =/ c uid = ${USER_UID}" \
         -e "/gid =/ c gid = ${USER_GID}" \
+        /home/roboshop/${COMPONENT}/payment.ini
 STAT $? "Startup script configuration"
 
 
