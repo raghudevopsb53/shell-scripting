@@ -17,7 +17,6 @@ case $? in
     ;;
 esac
 
-
 INFO "Setup RabbitMQ Repos"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash &>>$LOG_FILE
 STAT $? "RabbitMQ Yum repos setup"
