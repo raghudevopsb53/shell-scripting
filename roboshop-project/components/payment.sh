@@ -59,6 +59,6 @@ STAT $? "Payment SystemD Service"
 
 INFO "Starting Payment Service"
 systemctl enable ${COMPONENT} &>>$LOG_FILE
-systemctl start ${COMPONENT} &>>$LOG_FILE
+systemctl restart ${COMPONENT} &>>$LOG_FILE
 STAT $? "Payment Service Start"
 
