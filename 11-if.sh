@@ -33,6 +33,7 @@
     # Operators: -eq , -ne , -gt , -lt , -le , -ge
     # Ex : [ 1 -eq 2 ]
 # 2. File Tests
+    # https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html
 
 
 if [ "$1" == "DevOps" ]; then
